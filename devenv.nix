@@ -14,12 +14,13 @@ in {
     assemblyscript
     eslint
     git
+    npm
     prettier
   ];
 
   languages.javascript = {
     enable = true;
-    package = pkgs.deno;
+    bun.enable = true;
   };
   languages.typescript.enable = true;
 

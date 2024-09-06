@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "ip-core-wasm": "file:../ip-core-wasm"
+  },
+  "scripts": {
+    "main": "tsc index.ts && node index.js"
+  },
+  "main": "index.ts"
+}
