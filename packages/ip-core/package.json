@@ -1,10 +1,12 @@
 {
   "type": "module",
   "dependencies": {
+    "@thames/monads": "^0.7.0",
     "ip-core-wasm": "file:../ip-core-wasm"
   },
   "scripts": {
-    "main": "tsc index.ts && node index.js"
-  },
-  "main": "index.ts"
+    "node": "tsc --version && tsc --module node16 --moduleResolution node16 index.ts && node index.js",
+    "test": "npm run typecheck",
+    "typecheck": "tsc --module node16 --moduleResolution node16 --noEmit index.ts"
+  }
 }
