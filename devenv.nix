@@ -12,6 +12,7 @@ in {
 
   packages = with pkgs; with nodePackages; [
     assemblyscript
+    deno
     eslint
     git
     npm
