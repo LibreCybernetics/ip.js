@@ -1,3 +1,7 @@
+# Introduction
+
+A  library for processing and storing Internet Protocol (IP) information in typescript
+
 # Inspirations
 
 ## JS/TS

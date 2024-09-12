@@ -5,8 +5,8 @@
     "ip-core-wasm": "file:../ip-core-wasm"
   },
   "scripts": {
-    "node": "tsc --version && tsc --module node16 --moduleResolution node16 index.ts && node index.js",
+    "node": "tsx index.ts",
     "test": "npm run typecheck",
-    "typecheck": "tsc --module node16 --moduleResolution node16 --noEmit index.ts"
+    "typecheck": "tsc --module node16 --moduleResolution node16 --noEmit --allowImportingTsExtensions index.ts"
   }
 }
