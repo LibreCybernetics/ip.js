@@ -1,7 +1,7 @@
-// The entry file of your WebAssembly module.
+import { IPAddress } from "./IPAddress";
 
 @final
-export class IPv4Address {
+export class IPv4Address implements IPAddress<IPv4Address> {
   readonly address: u32;
 
   constructor(
@@ -26,7 +26,7 @@ export class IPv4Address {
   isEqual(other: IPv4Address): boolean {
     return this.address == other.address
   }
-};
+}
 
 export function IPv4Address_constructor(
   octet1: u8,
