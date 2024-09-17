@@ -1,8 +1,8 @@
 import { Result, Ok, Err } from '@thames/monads';
 
-import * as ip_core_wasm from 'ip-core-wasm'
+import * as ip_core_wasm from 'ip-core-wasm';
 
-import { IPAddress } from './IPAddress.ts'
+import { IPAddress } from './IPAddress';
 
 function validateOctet(octet: number): Result<number, string> {
   return (Number.isInteger(octet) && octet >= 0 && octet < 256) ? Ok(octet) : Err(`Not an octet: ${octet.toString()}`)

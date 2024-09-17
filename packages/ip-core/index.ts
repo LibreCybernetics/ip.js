@@ -1,4 +1,4 @@
-import { IPv4Address } from './src/IPv4Address.ts'
+import { IPv4Address } from './src/IPv4Address'
 
 const localhost = IPv4Address.create(127, 0, 0, 1)
 

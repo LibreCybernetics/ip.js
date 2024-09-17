@@ -6,7 +6,14 @@
   },
   "scripts": {
     "node": "tsx index.ts",
-    "test": "npm run typecheck",
-    "typecheck": "tsc --module node16 --moduleResolution node16 --noEmit --allowImportingTsExtensions index.ts"
+    "jest": "node --experimental-vm-modules ../../node_modules/jest/bin/jest.js",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck && npm run jest"
+  },
+  "devDependencies": {
+    "@fast-check/jest": "^2.0.2",
+    "fast-check": "^3.22.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5"
   }
 }
