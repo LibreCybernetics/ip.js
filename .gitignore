@@ -1,12 +1,16 @@
-# Devenv
+# Devenv / Direnv
 .devenv*
 devenv.local.nix
-
-# direnv
 .direnv
+
+# JetBrains
+.idea/
 
 # pre-commit
 .pre-commit-config.yaml
 
-# TypeScript
+# Project Specific
 node_modules/
+coverage/
+reports/
+.stryker-tmp
